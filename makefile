@@ -1,3 +1,3 @@
 .PHONY: build
 build:
-	go build -o bin/redashman main.go
+	go build -ldflags="-s -w" -trimpath -o bin/redashman main.go
